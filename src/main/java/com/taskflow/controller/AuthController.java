@@ -5,11 +5,14 @@ import com.taskflow.dto.response.ApiResponse;
 import com.taskflow.dto.response.AuthResponse;
 import com.taskflow.model.Role;
 import com.taskflow.service.AuthService;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@Tag(name = "Auth", description = "Authentication and registration")
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
