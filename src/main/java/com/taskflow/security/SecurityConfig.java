@@ -31,10 +31,13 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> auth
             	.requestMatchers("/").permitAll() 
                 .requestMatchers("/auth/**").permitAll()
+                .requestMatchers("/swagger-ui/**").permitAll()
+                .requestMatchers("/v3/api-docs/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/tasks/**").hasAnyRole("USER", "ADMIN")
                 .requestMatchers(HttpMethod.POST, "/tasks/**").hasRole("ADMIN")
                 .requestMatchers(HttpMethod.PUT, "/tasks/**").hasRole("ADMIN")
                 .requestMatchers(HttpMethod.DELETE, "/tasks/**").hasRole("ADMIN")
+                
                 .anyRequest().authenticated()
             )
             .exceptionHandling(ex -> ex
