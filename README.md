@@ -1,5 +1,7 @@
+[![Swagger UI](https://img.shields.io/badge/Swagger-UI-green)](https://taskflow-api-production-57b6.up.railway.app/swagger-ui/index.html)
+
 ## Live API
-Base URL:[![Swagger UI](https://img.shields.io/badge/Swagger-UI-green)](https://taskflow-api-production-57b6.up.railway.app/)
+Base URL:(https://taskflow-api-production-57b6.up.railway.app/)
 
 ### Quick Test
 POST `https://taskflow-api-production-57b6.up.railway.app/auth/register`
